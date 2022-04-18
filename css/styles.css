@@ -57,7 +57,7 @@ img {
   height: auto;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.17;
   color: var(--text-color-p);
@@ -92,7 +92,7 @@ body {
 
 .logo {
   margin-right: 93px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19; /* 31px/26px =1.19 */
@@ -300,6 +300,44 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+/* section customer */
+.customer .container {
+  padding: 94px 0;
+}
+.customer-title {
+  margin-bottom: 50px;
+  color: #000000;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.customer-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.customer-item {
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.customer-list .customer-item + .customer-item {
+  margin-left: 30px;
+}
+.customer-item a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.customer-item a:hover,
+.customer-item a:focus {
+  color: var(--accent-color);
+}
+
 /* Footer */
 footer {
   padding: 60px 0;
