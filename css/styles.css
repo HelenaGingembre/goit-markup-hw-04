@@ -157,7 +157,7 @@ body {
 .nav-address-item .link {
   color: inherit;
 }
-.nav-address-item.current,
+
 .nav-address-item:hover .link,
 .nav-address-item:focus .link,
 .nav-address-item:hover .nav-address-icon,
@@ -174,6 +174,7 @@ body {
 .hero {
   max-width: 1600px;
   height: 600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--bg-color-hero);
@@ -370,7 +371,6 @@ body {
   background-color: transparent;
   fill: var(--social-color);
 }
-.team-social-link.current,
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--accent-color);
@@ -394,6 +394,13 @@ body {
   flex-wrap: nowrap;
   justify-content: center;
 }
+.customer-item {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .customer-item + .customer-item {
   margin-left: 30px;
 }
@@ -411,7 +418,7 @@ body {
   width: 106px;
   height: 60px;
 }
-.customer-item-link.current,
+
 .customer-item-link:hover,
 .customer-item-link:focus {
   color: var(--accent-color);
@@ -428,6 +435,7 @@ footer {
 footer .container {
   display: flex;
   text-align: left;
+  align-items: baseline;
 }
 .address-footer {
   margin-right: 70px;
@@ -456,9 +464,9 @@ footer .logo {
 .address-item .link {
   color: var(--link-color-address);
 }
-.social-footer {
+/* .social-footer {
   padding-top: 12px;
-}
+} */
 .social-footer-title {
   margin-bottom: 20px;
   font-weight: 700;
@@ -488,7 +496,7 @@ footer .logo {
   background-color: var(--bg-social-icon-footer);
   fill: var(--text-color-logo-footer);
 }
-.footer-social-link.current,
+
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--accent-color);
@@ -546,18 +554,20 @@ footer .logo {
   background-color: var(--bg-color-card);
 }
 
-.portfolio-card.current,
-.portfolio-card:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 .portfolio-card:nth-child(3n) {
   margin-right: 0;
 }
 .portfolio-card:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
+.portfolio-card .link {
+  display: block;
+}
+.portfolio-card .link:hover,
+.portfolio-card .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .card-thumb img {
   display: block;
   min-width: 100%;
